@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Demo Profile Card</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="css/common.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <ul class="right">
+                        <li>
+                            <a
+                                class="dropdown-trigger"
+                                data-target="dropdown1"
+                                onclick="show_profile_card()"
+                            >
+                                <i class="material-icons">
+                                    <img
+                                        class="profile-icon"
+                                        src="https://i.ibb.co/2sq8hmz/profile-icon.png"
+                                        alt="profile-icon"
+                                    />
+                                </i>
+                            </a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="https://www.linkedin.com" target="_blank">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="https://www.gmail.com" target="_blank">
+                                Email
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Profile card Structure -->
+        <div class="row">
+            <div class="col s12 m3 push-m9">
+                <div id="profile-card" class="card profile-card">
+                    <div class="card-content">
+                        <p>
+                            I am a very simple card. I am good at containing
+                            small bits of information. I am convenient because I
+                            require little markup to use effectively.
+                        </p>
+                    </div>
+                    <div class="card-tabs">
+                        <ul id="tabs_swipe" class="tabs tabs-fixed-width">
+                            <li class="tab">
+                                <a class="active" href="#info">Info</a>
+                            </li>
+                            <li class="tab">
+                                <a href="#qsettings">Quick Settings</a>
+                            </li>
+                            <li class="tab">
+                                <a href="#orders">Past Orders</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Information tab -->
+                    <div id="info" class="card-content grey lighten-4">
+                        <div id="info1" class="profile-tabs-data">
+                            <p>Full Name</p>
+                            <p class="grey-text darken-3">Michael Jackson</p>
+                        </div>
+                        <div id="info2" class="profile-tabs-data">
+                            <p>Email</p>
+                            <p class="grey-text darken-3">
+                                duxxxxxxxxx@gxxxx.com
+                            </p>
+                        </div>
+                        <div id="info3" class="profile-tabs-data">
+                            <p>Phone Number</p>
+                            <p class="grey-text darken-3">+91 (999) XXX XXXX</p>
+                        </div>
+                        <button
+                            class="
+                                btn-small
+                                waves-effect waves-light
+                                profile-btn
+                            "
+                            type="submit"
+                            name="action"
+                        >
+                            Edit
+                            <i class="material-icons small">edit</i>
+                        </button>
+                    </div>
+                    <!-- Settings tab -->
+                    <div id="qsettings" class="card-content grey lighten-4">
+                        <div id="qsettings1" class="profile-tabs-data">
+                            <p>Email Notifications</p>
+                            <!-- Toggle Switch -->
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="qsettings2" class="profile-tabs-data">
+                            <p>SMS Notifications</p>
+                            <!-- Toggle Switch -->
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="qsettings3" class="profile-tabs-data">
+                            <p>Promotional Offers</p>
+                            <!-- Toggle Switch -->
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <button
+                            class="
+                                btn-small
+                                waves-effect waves-light
+                                profile-btn
+                            "
+                            type="submit"
+                            name="action"
+                        >
+                            more...
+                        </button>
+                    </div>
+                    <!-- Orders Tab -->
+                    <div id="orders" class="card-content grey lighten-4">
+                        <!-- first order -->
+                        <div id="orders1">
+                            <div class="card blue-grey darken-1 orders">
+                                <div class="orders-cards">
+                                    <p class="order-number darken-3">
+                                        Order #54321001
+                                    </p>
+                                    <span
+                                        class="order-status new orange badge"
+                                        data-badge-caption=""
+                                    >
+                                        In&nbspTransit
+                                    </span>
+                                </div>
+                                <div
+                                    class="
+                                        card-content
+                                        white-text
+                                        orders-content
+                                    "
+                                >
+                                    <span class="card-title">
+                                        Deep Breathing reminder cards (set of 4)
+                                    </span>
+                                    <p class="delivery-date">
+                                        Expected Delivery: 1st Jan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="orders2">
+                            <div class="card blue-grey darken-1 orders">
+                                <div class="orders-cards">
+                                    <p class="order-number darken-3">
+                                        Order #54321000
+                                    </p>
+                                    <span
+                                        class="order-status new green badge"
+                                        data-badge-caption=""
+                                    >
+                                        Delivered
+                                    </span>
+                                </div>
+                                <div
+                                    class="
+                                        card-content
+                                        white-text
+                                        orders-content
+                                    "
+                                >
+                                    <span class="card-title">
+                                        Meditation/Yoga mat (1.5m - Purple)
+                                    </span>
+                                    <p class="delivery-date">
+                                        Delivered On: 25th Dec
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="
+                                btn-small
+                                waves-effect waves-light
+                                profile-btn
+                            "
+                            type="submit"
+                            name="action"
+                        >
+                            more...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main content -->
+        <h1 class="title">Click on profile icon to view component</h1>
+        <img
+            class="brand-animation NO-CACHE"
+            src="https://i.ibb.co/vHP9fSH/logo-template-design-canva-holder.png"
+            data-src="https://i.ibb.co/1q4ZWL0/logo-template-design-canva.gif"
+            alt="logo-template-design-canva"
+        />
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l9 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">
+                            You can use rows and columns here to organize your
+                            footer content.
+                        </p>
+                    </div>
+                    <div class="col l1 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">
+                                    Orders
+                                </a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">
+                                    Get Help!
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2021 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">
+                        India
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+    </body>
+</html>

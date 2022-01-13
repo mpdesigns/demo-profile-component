@@ -1,0 +1,89 @@
+/*
+This file is used for loading CSS that is common and needed throughout the website. 
+Example - CSS for navigation bar UI
+
+Also it contains CSS overiding materialize CSS.
+*/
+
+i {
+    vertical-align: middle;
+}
+
+.title {
+    text-align: center;
+}
+
+.profile-icon {
+    height: 95%;
+    background-color: beige;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+.brand-animation {
+    border-style: none;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-card {
+    display: none;
+    position: fixed;
+    margin-right: 1em;
+}
+
+.card .card-content {
+    padding: 24px 17px;
+}
+
+.profile-tabs-data {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
+}
+
+.profile-btn {
+    margin-top: 1.2em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ee6e73;
+}
+
+.orders {
+    padding: 8px;
+    margin-bottom: 1em;
+}
+
+.orders-cards {
+    justify-content: space-between;
+    display: flex;
+}
+
+.orders-content {
+    padding: 0px 12px !important;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.delivery-date {
+    font-size: 12px;
+}
+
+.order-status {
+    font-weight: 500 !important;
+}
+
+.order-number {
+    color: #c6c6c6;
+    padding: 2px;
+}
+
+nav .brand-logo {
+    padding: 0em 0em 0em 1em;
+}
